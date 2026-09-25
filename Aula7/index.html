@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Chicle&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartão de Visita - Gabriel Neres</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Seção de indentificação -->
+
+    <Header>
+        <h1>Gabriel Silva Ribeiro Neres</h1>
+        <p><strong>Curso:</strong> Análise e desenvolvimento - Fatec Carapicuíba.</p>
+        <p><strong>Cidade/UF:</strong> São Lourenço da Serra.</p>
+        <hr>
+    
+
+    <!-- Seção de navegação -->
+        <nav>
+            <h2>Seção de navegação</h2>
+            <a href="#biografia">Quem sou</a>
+            <a href="#Tecnologias">O que domino</a>
+            <a href="#Hobbies">Meus passa tempos</a>
+            <a href="#Objetivos">Meus objetivos</a>
+        </nav>
+    </Header>
+
+    <main>
+
+        <!-- Seção de autobiografia -->
+        
+        <section id="Biografia">
+            <h2 id="bio">Quem sou?</h2>
+            <img id="foto" src="imagens/Minha foto.jpg" alt="Foto de perfil minha (Gabriel Neres) de frente." width="200px">
+            <p>Me chamo Gabriel Neres, ou só Neres. Tenho 18 anos e estou cursando análise e desenvolvimento de sistemas
+                na Fatec de Carapicuíba. Gosto muito de programação, desenhar e animar, portanto, estudo estes três setores
+                a anos com o objetivo de me capacitar para o mercado de trabalho.</p>
+            <p>Minha maior inspiração para a área de tecnologia é e sempre será minha mãe. Além de ter me apresentado a
+                área
+                de tecnologia, foi a principal motivadora a seguir esta área.</p>
+        </section>
+        
+        <!--Seção de tecnologias -->
+        
+        <section id="Tecnologias">
+            <h2>Tecnologias que tenho conhecimento</h2>
+            <table border="3px">
+                <tr>
+                    <th>Tecnologia</th>
+                    <th>nível</th>
+                    <th>Experiência (1 Ano)</th>
+                </tr>
+                <tr>
+            <td>HTML</td>
+            <td>Básico</td>
+            <td>2 meses</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Iniciante</td>
+            <td>1 mês</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Em breve</td>
+            <td>-</td>
+        </tr>
+
+            </table>
+            <h2>Próximos passos</h2>
+            <ol>
+                <li>Aprender e desenvolver JS</li>
+                <li>Estudar e aprender boas práticas de programação</li>
+                <li>Produzir projetos reais</li>
+            </ol>
+        </section>
+        
+        <!-- Seção de hobbies -->
+        
+        <section id="Hobbies">
+            <h2>Meus hobiies favoritos</h2>
+            <ul>
+                <li>Programar em Java, e estilizar páginas</li>
+                <li>Produzir animações</li>
+                <li>Desenhar</li>
+                <li>Treinar em academias e dojos de artes marciais</li>
+                <li>Jogar videos games</li>
+                <li>Assistir em inglês</li>
+                <li>Cozinhar</li>
+            </ul>
+
+            <h3>Galeria dos meus hobbies</h3>
+            <img src="imagens/Foto programando.jpg" alt="Uma foto de programação em python." class="imagens" width="200px">
+            <img src="imagens/Imagem do meu dojo.jpg" alt="Uma foto tirada do meu dojo onde treino." class="imagens" width="200px">
+            <img src="imagens/Meu desenho.png" alt="Uma imagem de um desenho produzido por mim." class="imagens" width="200px">
+        </section>
+        
+        <!-- Seção de objetivos -->
+        
+        <section id="Objetivos">
+            <h2>Objetivos profissionais</h2>
+            <ol>
+                <li><strong>Curto prazo (2 - 3 meses): </strong>Conquistar minha reservista.</li>
+                <li><strong>Médio prazo (6 meses - 10 meses): </strong> conseguir meu primeiro stágio.</li>
+                <li><strong>Longo prazo (1 ano - 2 anos): </strong>Começar a atuar ativamente na área da tecnologia</li>
+            </ol>
+        </section>
+
+        <!-- Seção de Sites que mais uso -->
+
+        <aside>
+            <h3>Top 5 sites que eu mais acesso</h2>
+            <ol>
+                <li><a href="https://www.youtube.com" target="_blank">Página do youtube</a></li>
+                <li><a href="https://www.construct.net/en" target="_blank">Construct3 (site de criação de jogos)</a></li>
+                <li><a href="https://sticknodes.com/stickfigures/">StickNodes (Referencia e pacotes para animação para sticknodes)</a></li>
+                <li><a href="https://notebook.google.com/?pli=1">NotebookLM (site que resume documentos)</a></li>
+                <li><a href="https://judge.beecrowd.com/pt/forum">Beecrowd (Site de atividades de programação)</a></li>
+            </ol>
+        </aside>
+    </main>
+
+    <!-- Seção de contato -->
+
+    <section id="contato-from">
+        <h2>Entre em contato</h2>
+
+        <form>
+            <label for="nomeContato">Nome:</label>
+            <input type="text" id="nomeContato" required>
+            <br>
+            <label for="emailContato">E-mail:</label>
+            <input type="email" id="emailContato" required>
+            <br>
+            <label for="assunto">assunto:</label>
+            <input type="text" id="assunto" placeholder="Dúvida, sujestão, orçamento...">
+            <button type="submit">Enviar</button>
+            <br>
+
+            
+        </form>
+    </section>
+    <!-- Seção de links úteis -->
+
+    <footer>
+        <h2>Onde me encontrar</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/gabriel-ribeiro-neres-86a220412/" target="_blank">Meu Github</a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/gabriel-ribeiro-neres-86a220412/" target="_blank">Meu LinkedIn</a>
+            </li>
+            <li><a href="mailto:sr.neres@gmail.com" target="_blank">Meu E-mail</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
