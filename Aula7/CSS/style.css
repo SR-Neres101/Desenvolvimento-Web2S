@@ -1,0 +1,68 @@
+.carter-one-regular {
+  font-family: "Carter One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.imagens
+{
+    border-radius: 30px;
+}
+#foto{
+    
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+body
+{
+    font-family: "Carter One", system-ui;}
+h1{
+    color: #042A2B;
+}
+header {
+    
+    color: #5EB1BF;
+    text-align: center;
+    background-color: #FCFCFC;
+}
+
+main {
+    h2{
+        text-align: center;
+    }
+    text-align: justify;
+    background-color: #000000;
+    color: #F4E04D;
+}
+
+#bioPrincipal{
+    text-align: center;
+}
+#Biografia
+{
+    font-family: Carter One, system-ui;
+}
+aside{
+    text-align: right;
+}
+#Tecnologias{
+    color: #5EB1BF;
+}
+#Objetivos{
+    color: #5EB1BF;
+}
+#Hobbies{
+    color: #54F2F2;
+    text-align: center;
+    ul{
+        text-align: left;
+    }
+}
+
+nav a{
+     padding: 20px;
+}
+

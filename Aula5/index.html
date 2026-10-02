@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartão de Visita - Gabriel Neres</title>
+    <style>
+        .imagens
+        {
+            border-radius: 30px;
+        }
+    </style>
 </head>
 
 <body>
@@ -32,6 +38,7 @@
         
         <section id="Biografia">
             <h2>Quem sou?</h2>
+            <img class="imagens" src="imagens/Minha foto.jpg" alt="Foto de perfil minha (Gabriel Neres) de frente." width="200px">
             <p>Me chamo Gabriel Neres, ou só Neres. Tenho 18 anos e estou cursando análise e desenvolvimento de sistemas
                 na
                 Fatec de Carapicuíba. Gosto muito de programação, desenhar e animar, portanto, estudo estes três setores
@@ -46,25 +53,29 @@
         
         <section id="Tecnologias">
             <h2>Tecnologias que tenho cohecimento</h2>
-            <ul>
-                <li>Básico
-                    <ul>
-                        <li>JS</li>
-                        <li>Python</li>
-                    </ul>
-                </li>
-                <li>Médio
-                    <ul>
-                        <li>CSS3</li>
-                    </ul>
-                </li>
-                <li>Avançado
-                    <ul>
-                        <li>Java</li>
-                        <li>HTML5</li>
-                    </ul>
-                </li>
-            </ul>
+            <table border="3px">
+                <tr>
+                    <th>Teconologia</th>
+                    <th>nível</th>
+                    <th>Experiência (1 Ano)</th>
+                </tr>
+                <tr>
+            <td>HTML</td>
+            <td>Básico</td>
+            <td>2 meses</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>Iniciante</td>
+            <td>1 mês</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Em breve</td>
+            <td>-</td>
+        </tr>
+
+            </table>
             <h2>Próximos passos</h2>
             <ol>
                 <li>Aprender e desenvolver JS</li>
@@ -86,6 +97,11 @@
                 <li>Assistir em inglês</li>
                 <li>Cozinhar</li>
             </ul>
+
+            <h3>Galeria dos meus hobbies</h3>
+            <img src="imagens/Foto programando.jpg" alt="Uma foto de programação em python." class="imagens" width="200px">
+            <img src="imagens/Imagem do meu dojo.jpg" alt="Uma foto tirada do meu dojo onde treino." class="imagens" width="200px">
+            <img src="imagens/Meu desenho.png" alt="Uma imagem de um desenho produzido por mim." class="imagens" width="200px">
         </section>
         
         <!-- Seção de objetivos -->
@@ -113,6 +129,25 @@
         </aside>
     </main>
 
+    <!-- Seção de contato -->
+
+    <section id="contato-from">
+        <h2>Entre em contato</h2>
+
+        <form>
+            <label for="nomeContato">Nome:</label>
+            <input type="text" id="nomeContato" required>
+            <br>
+            <label for="emailContato">E-mail:</label>
+            <input type="text" id="emailContato" required>
+            <br>
+            <label for="assunto">assunto:</label>
+            <input type="text" id="assunto" placeholder="Dúvida, sujestão, orçamento...">
+            <br>
+
+            
+        </form>
+    </section>
     <!-- Seção de links úteis -->
 
     <footer>
