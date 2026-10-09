@@ -1,0 +1,406 @@
+/* ===== Geral ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Carter One", system-ui;
+  background: #e8f1f2;
+  color: #042a2b;
+  line-height: 1.8;
+  text-align: center;
+}
+
+body {
+  font-family: Helvetica, sans-serif, system-ui;
+  background: #e8f1f2;
+  color: #042a2b;
+  line-height: 1.8;
+}
+
+/* ===== Grid ===== */
+@media (min-width: 768px) {
+  .layout {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "main main main"
+      "hobbies hobbies hobbies"
+      "tecnologias tecnologias tecnologias"
+      "projetos projetos objetivo"
+      "contato contato aside"
+      "footer footer footer";
+    grid-template-columns:
+      1fr,
+      1fr,
+      1fr 1fr;
+    gap: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "main main main main"
+      "hobbies hobbies hobbies hobbies"
+      "projetos tecnologias tecnologias objetivo "
+      "contato contato contato aside"
+      "footer footer footer footer";
+    grid-template-columns:
+      1fr,
+      1fr,
+      1fr 1fr;
+    gap: 20px;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+/* ===== Cabeçalho ===== */
+
+header {
+  grid-area: header;
+  text-align: center;
+  padding: 30px;
+  border-bottom: 4px solid #5eb1bf;
+}
+
+h1 {
+  color: #135a5c;
+}
+
+#destaque {
+  text-decoration: underline;
+}
+
+/* ===== Navegação ===== */
+
+nav {
+  grid-area: nav;
+  margin-top: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #1b979b;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav h2 {
+  text-align: center;
+  color: #042a2b;
+}
+nav a:hover {
+  background: #5eb1bf;
+  color: white;
+}
+
+#navegacao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* ===== Conteúdo ===== */
+
+main {
+  grid-area: main;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 25px;
+  background: #042a2b;
+  color: #f4e04d;
+  border-radius: 15px;
+}
+
+main h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 30px;
+}
+
+main p {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/* ===== Foto ===== */
+
+#foto {
+  display: block;
+  margin: 20px auto;
+  width: 260px;
+  border-radius: 20px;
+  border: 4px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Galeria ===== */
+
+.imagens {
+  border-radius: 20px;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+#galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.imagens:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Projetos ===== */
+.projetos {
+  grid-area: projetos;
+}
+.projetos-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projeto-card {
+  background-color: #134941;
+  border: 1px solid #11d67a;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1;
+  min-width: auto;
+}
+/* ===== Tabela ===== */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table th {
+  background: #5eb1bf;
+  color: white;
+}
+
+table td,
+table th {
+  padding: 12px;
+  border: 2px solid white;
+  text-align: center;
+}
+
+/* ===== Listas ===== */
+
+ul,
+ol {
+  margin-left: 30px;
+}
+
+#hobbies {
+  border-radius: 20px;
+  grid-area: hobbies;
+  background-color: #042a2b;
+}
+#hobbies h2,
+#hobbies h3 {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#hobbies ul {
+  padding: 10px 5px 20px 5px;
+  color: #54f2f2;
+}
+@media (min-width: 1024px) {
+  #hobbies ul {
+    padding: 10px 5px 20px 5px;
+    color: #54f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+#hobbies li {
+  padding-right: 50px;
+}
+
+#tecnologias {
+  grid-area: tecnologias;
+  color: #5eb1bf;
+}
+
+/* ===== Objetivos ===== */
+
+#objetivos {
+  grid-area: objetivo;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width:768px){
+#objetivos h2 {
+  text-align: center;
+  
+  height: 50px;
+  width: 800px;
+}
+}
+
+.objetivo {
+  background-color: #134941;
+  border: 1px solid #11d67a;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1;
+  min-width: auto;
+  gap: 30px;
+  margin: 10px;
+}
+/* ===== Aside ===== */
+
+aside {
+  grid-area: aside;
+  background: #042a2b;
+  border-radius: 20px;
+}
+aside li {
+  padding-bottom: 30px;
+  margin-top: 20px;
+}
+aside a {
+  color: #17ccb1;
+  text-decoration: none;
+}
+
+/* ===== Formulário ===== */
+#contato {
+  grid-area: contato;
+}
+#sub-formulario {
+  text-align: center;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #5eb1bf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1b979b;
+}
+
+/* ===== Rodapé ===== */
+
+#redes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: auto;
+}
+
+#redes li{
+    padding-right: 5px;
+}
+
+@media (min-width:768px){
+  #redes {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+}
+footer {
+  grid-area: footer;
+  text-align: center;
+  background: #042a2b;
+  color: white;
+  padding: 25px;
+}
+footer a {
+  color: #54f2f2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Box Model ===== */
+
+.box {
+  border: 1px solid #24baa4;
+
+  padding: 30px 5px 20px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.box h2,
+.box h3 {
+  border-radius: 30px;
+}
+
+.format {
+  min-width: 0;
+  margin: 0;
+  padding: 25px;
+  background: #042a2b;
+  color: #f4e04d;
+  border-radius: 15px;
+}
+.format h2 {
+  margin-bottom: 30px;
+  border-radius: 30px;
+  height: auto;
+}
